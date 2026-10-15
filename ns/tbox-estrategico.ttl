@@ -1,0 +1,72 @@
+@prefix okfe: <https://okf.atonagestao.com/ns/tbox-estrategico#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+okfe:ComplianceUnit a owl:Class ;
+    rdfs:label "ComplianceUnit" .
+
+okfe:NormativeDocument a owl:Class ;
+    rdfs:label "NormativeDocument" ;
+    skos:closeMatch <http://data.europa.eu/eli/ontology#LegalResource> .
+
+okfe:PrimaryUndesiredEvent a owl:Class ;
+    rdfs:label "PUE" .
+
+okfe:anchoredBy a owl:DatatypeProperty ;
+    rdfs:label "anchored_by" .
+
+okfe:appliesTo a owl:DatatypeProperty ;
+    rdfs:label "applies_to" .
+
+okfe:complianceDeadline a owl:DatatypeProperty ;
+    rdfs:label "complianceDeadline" .
+
+okfe:compliance_units a owl:ObjectProperty ;
+    rdfs:label "compliance_units" .
+
+okfe:constraint a owl:DatatypeProperty ;
+    rdfs:label "constraint" .
+
+okfe:dano a owl:DatatypeProperty ;
+    rdfs:label "dano" .
+
+okfe:danoPotencialAssociado a owl:DatatypeProperty ;
+    rdfs:label "dpa" .
+
+okfe:exceptions a owl:DatatypeProperty ;
+    rdfs:label "exceptions" .
+
+okfe:hasSubject a owl:DatatypeProperty ;
+    rdfs:label "hasSubject" .
+
+okfe:imposes a owl:DatatypeProperty ;
+    rdfs:label "imposes" .
+
+okfe:issuedBy a owl:DatatypeProperty ;
+    rdfs:label "issuedBy" .
+
+okfe:jurisdictionLevel a owl:DatatypeProperty ;
+    rdfs:label "jurisdictionLevel" .
+
+okfe:objetoSobRisco a owl:DatatypeProperty ;
+    rdfs:label "objeto_sob_risco" .
+
+okfe:originaPue a owl:ObjectProperty ;
+    rdfs:label "origina_pue" .
+
+okfe:preconditions a owl:DatatypeProperty ;
+    rdfs:label "preconditions" .
+
+okfe:recebeAcao a owl:DatatypeProperty ;
+    rdfs:label "recebe_acao" .
+
+okfe:recebeMecanismo a owl:DatatypeProperty ;
+    rdfs:label "recebe_mecanismo" .
+
+okfe:severidadePUE a owl:DatatypeProperty ;
+    rdfs:label "severidade" .
+
+okfe:strategicObjective a owl:DatatypeProperty ;
+    rdfs:label "strategicObjective" .
+

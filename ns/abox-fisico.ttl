@@ -1,0 +1,56 @@
+@prefix okf: <https://okf.atonagestao.com/ns/okf#> .
+@prefix okff: <https://okf.atonagestao.com/ns/abox-fisico#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+okff:InventoryRecord a owl:Class ;
+    rdfs:label "RegistroFisico" .
+
+okff:afetadoPor a owl:DatatypeProperty ;
+    rdfs:label "afetado_por" .
+
+okff:classeRegulatoria a owl:DatatypeProperty ;
+    rdfs:label "classe_regulatoria" .
+
+okff:condicao_integridade a owl:DatatypeProperty ;
+    rdfs:label "estado" .
+
+okff:constituicaoFisica a owl:DatatypeProperty ;
+    rdfs:label "constituicao" .
+
+okff:dependsOnObject a owl:ObjectProperty ;
+    rdfs:label "depende_de" ;
+    rdfs:subPropertyOf okf:arestaDependencia .
+
+okff:equivalenteA a owl:DatatypeProperty ;
+    rdfs:label "equivalente_a" .
+
+okff:falhaDeFuncao a owl:DatatypeProperty ;
+    rdfs:label "falha_de_funcao" .
+
+okff:funcaoProjetada a owl:DatatypeProperty ;
+    rdfs:label "funcao" .
+
+okff:hasObject a owl:ObjectProperty ;
+    rdfs:label "objetos" .
+
+okff:hasSpatialOverlap a owl:ObjectProperty ;
+    rdfs:label "sobreposicao_espacial" ;
+    rdfs:subPropertyOf okf:arestaEspacial .
+
+okff:integridade_detalhada a owl:DatatypeProperty ;
+    rdfs:label "integridade_detalhada" .
+
+okff:justifies_presence_of a owl:DatatypeProperty ;
+    rdfs:label "justifies_presence_of" .
+
+okff:propagatesToObject a owl:DatatypeProperty ;
+    rdfs:label "propaga_para" ;
+    rdfs:subPropertyOf okf:arestaCausal .
+
+okff:referencia_local a owl:DatatypeProperty ;
+    rdfs:label "localizacao" .
+
+okff:status_calibracao a owl:DatatypeProperty ;
+    rdfs:label "calibracao" .
+

@@ -1,0 +1,28 @@
+@prefix okf: <https://okf.atonagestao.com/ns/okf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+okf:arestaCausal a owl:ObjectProperty ;
+    rdfs:label "aresta causal" .
+
+okf:arestaDependencia a owl:ObjectProperty ;
+    rdfs:label "aresta dependencia" .
+
+okf:arestaEspacial a owl:ObjectProperty ;
+    rdfs:label "aresta espacial" .
+
+okf:classe_taxonomica a owl:DatatypeProperty ;
+    rdfs:label "tipo" .
+
+okf:nature a owl:DatatypeProperty ;
+    rdfs:label "nature" .
+
+okf:sucessorId a owl:DatatypeProperty ;
+    rdfs:label "sucessor_id" .
+
+okf:validoAte a owl:DatatypeProperty ;
+    rdfs:label "valido_ate" .
+
+okf:validoDesde a owl:DatatypeProperty ;
+    rdfs:label "valido_desde" .
+

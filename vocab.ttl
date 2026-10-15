@@ -1,0 +1,416 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix okf: <https://okf.atonagestao.com/ns/okf#> .
+@prefix okfe: <https://okf.atonagestao.com/ns/tbox-estrategico#> .
+@prefix okff: <https://okf.atonagestao.com/ns/abox-fisico#> .
+@prefix okfm: <https://okf.atonagestao.com/ns/abox-metrico#> .
+@prefix okfp: <https://okf.atonagestao.com/ns/pendencia#> .
+@prefix okft: <https://okf.atonagestao.com/ns/tbox-tatico#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+
+<http://data.europa.eu/eli/ontology#amends> a owl:DatatypeProperty .
+
+<http://data.europa.eu/eli/ontology#repeals> a owl:DatatypeProperty .
+
+dcterms:description a owl:DatatypeProperty .
+
+dcterms:title a owl:DatatypeProperty .
+
+<http://purl.org/nemo/gufo#Object> a owl:Class .
+
+<http://purl.org/nemo/gufo#isComponentOf> a owl:DatatypeProperty .
+
+<http://qudt.org/schema/qudt/unit> a owl:DatatypeProperty .
+
+<http://qudt.org/schema/qudt/value> a owl:DatatypeProperty .
+
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> a owl:DatatypeProperty .
+
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> a owl:DatatypeProperty .
+
+sosa:Observation a owl:Class .
+
+sosa:hasFeatureOfInterest a owl:DatatypeProperty .
+
+sosa:madeBySensor a owl:DatatypeProperty .
+
+sosa:phenomenonTime a owl:DatatypeProperty .
+
+okff:InventoryRecord a owl:Class ;
+    rdfs:label "RegistroFisico" .
+
+okff:afetadoPor a owl:DatatypeProperty ;
+    rdfs:label "afetado_por" .
+
+okff:classeRegulatoria a owl:DatatypeProperty ;
+    rdfs:label "classe_regulatoria" .
+
+okff:condicao_integridade a owl:DatatypeProperty ;
+    rdfs:label "estado" .
+
+okff:constituicaoFisica a owl:DatatypeProperty ;
+    rdfs:label "constituicao" .
+
+okff:dependsOnObject a owl:ObjectProperty ;
+    rdfs:label "depende_de" ;
+    rdfs:subPropertyOf okf:arestaDependencia .
+
+okff:equivalenteA a owl:DatatypeProperty ;
+    rdfs:label "equivalente_a" .
+
+okff:falhaDeFuncao a owl:DatatypeProperty ;
+    rdfs:label "falha_de_funcao" .
+
+okff:funcaoProjetada a owl:DatatypeProperty ;
+    rdfs:label "funcao" .
+
+okff:hasObject a owl:ObjectProperty ;
+    rdfs:label "objetos" .
+
+okff:hasSpatialOverlap a owl:ObjectProperty ;
+    rdfs:label "sobreposicao_espacial" ;
+    rdfs:subPropertyOf okf:arestaEspacial .
+
+okff:integridade_detalhada a owl:DatatypeProperty ;
+    rdfs:label "integridade_detalhada" .
+
+okff:justifies_presence_of a owl:DatatypeProperty ;
+    rdfs:label "justifies_presence_of" .
+
+okff:propagatesToObject a owl:DatatypeProperty ;
+    rdfs:label "propaga_para" ;
+    rdfs:subPropertyOf okf:arestaCausal .
+
+okff:referencia_local a owl:DatatypeProperty ;
+    rdfs:label "localizacao" .
+
+okff:status_calibracao a owl:DatatypeProperty ;
+    rdfs:label "calibracao" .
+
+okfm:MeasurementDocument a owl:Class ;
+    rdfs:label "MeasurementDocument" .
+
+okfm:documento_origem a owl:DatatypeProperty ;
+    rdfs:label "documento_origem" .
+
+okfm:dominio_fenomenologico a owl:DatatypeProperty ;
+    rdfs:label "dominio_fenomenologico" .
+
+okfm:estado_qualitativo a owl:DatatypeProperty ;
+    rdfs:label "estado_qualitativo" .
+
+okfm:monitorsFailureMode a owl:ObjectProperty ;
+    rdfs:label "monitors_failure_mode" .
+
+okfm:observations a owl:ObjectProperty ;
+    rdfs:label "observations" .
+
+okfm:satisfies_requirement_of a owl:DatatypeProperty ;
+    rdfs:label "satisfies_requirement_of" .
+
+okfm:tipoObservacao a owl:DatatypeProperty ;
+    rdfs:label "tipo_observacao" .
+
+okfm:triggersAction a owl:DatatypeProperty ;
+    rdfs:label "triggersAction" .
+
+okf:classe_taxonomica a owl:DatatypeProperty ;
+    rdfs:label "tipo" .
+
+okf:nature a owl:DatatypeProperty ;
+    rdfs:label "nature" .
+
+okf:sucessorId a owl:DatatypeProperty ;
+    rdfs:label "sucessor_id" .
+
+okf:validoAte a owl:DatatypeProperty ;
+    rdfs:label "valido_ate" .
+
+okf:validoDesde a owl:DatatypeProperty ;
+    rdfs:label "valido_desde" .
+
+okfp:Pendencia a owl:Class ;
+    rdfs:label "Pendencia" .
+
+okfp:bloqueia a owl:DatatypeProperty ;
+    rdfs:label "bloqueia" .
+
+okfp:confidence a owl:DatatypeProperty ;
+    rdfs:label "confidence" .
+
+okfp:descricao a owl:DatatypeProperty ;
+    rdfs:label "descricao" .
+
+okfp:norma_ref a owl:DatatypeProperty ;
+    rdfs:label "norma_ref" .
+
+okfp:prazo_legal a owl:DatatypeProperty ;
+    rdfs:label "prazo_legal" .
+
+okfp:resolvida_por a owl:DatatypeProperty ;
+    rdfs:label "resolvida_por" .
+
+okfp:responsavel a owl:DatatypeProperty ;
+    rdfs:label "responsavel" .
+
+okfp:status a owl:DatatypeProperty ;
+    rdfs:label "status" .
+
+okfp:tipo a owl:DatatypeProperty ;
+    rdfs:label "tipo" .
+
+okfe:ComplianceUnit a owl:Class ;
+    rdfs:label "ComplianceUnit" .
+
+okfe:NormativeDocument a owl:Class ;
+    rdfs:label "NormativeDocument" ;
+    skos:closeMatch <http://data.europa.eu/eli/ontology#LegalResource> .
+
+okfe:PrimaryUndesiredEvent a owl:Class ;
+    rdfs:label "PUE" .
+
+okfe:anchoredBy a owl:DatatypeProperty ;
+    rdfs:label "anchored_by" .
+
+okfe:appliesTo a owl:DatatypeProperty ;
+    rdfs:label "applies_to" .
+
+okfe:complianceDeadline a owl:DatatypeProperty ;
+    rdfs:label "complianceDeadline" .
+
+okfe:compliance_units a owl:ObjectProperty ;
+    rdfs:label "compliance_units" .
+
+okfe:constraint a owl:DatatypeProperty ;
+    rdfs:label "constraint" .
+
+okfe:dano a owl:DatatypeProperty ;
+    rdfs:label "dano" .
+
+okfe:danoPotencialAssociado a owl:DatatypeProperty ;
+    rdfs:label "dpa" .
+
+okfe:exceptions a owl:DatatypeProperty ;
+    rdfs:label "exceptions" .
+
+okfe:hasSubject a owl:DatatypeProperty ;
+    rdfs:label "hasSubject" .
+
+okfe:imposes a owl:DatatypeProperty ;
+    rdfs:label "imposes" .
+
+okfe:issuedBy a owl:DatatypeProperty ;
+    rdfs:label "issuedBy" .
+
+okfe:jurisdictionLevel a owl:DatatypeProperty ;
+    rdfs:label "jurisdictionLevel" .
+
+okfe:objetoSobRisco a owl:DatatypeProperty ;
+    rdfs:label "objeto_sob_risco" .
+
+okfe:originaPue a owl:ObjectProperty ;
+    rdfs:label "origina_pue" .
+
+okfe:preconditions a owl:DatatypeProperty ;
+    rdfs:label "preconditions" .
+
+okfe:recebeAcao a owl:DatatypeProperty ;
+    rdfs:label "recebe_acao" .
+
+okfe:recebeMecanismo a owl:DatatypeProperty ;
+    rdfs:label "recebe_mecanismo" .
+
+okfe:severidadePUE a owl:DatatypeProperty ;
+    rdfs:label "severidade" .
+
+okfe:strategicObjective a owl:DatatypeProperty ;
+    rdfs:label "strategicObjective" .
+
+okft:FailureMode a owl:Class ;
+    rdfs:label "MecanismoDePerda" .
+
+okft:GrupoDeRisco a owl:Class ;
+    rdfs:label "GrupoDeRisco" .
+
+okft:RecommendedAction a owl:Class ;
+    rdfs:label "Acao" .
+
+okft:Task a owl:Class ;
+    rdfs:label "Task" .
+
+okft:TechnicalDocument a owl:Class ;
+    rdfs:label "TechnicalDocument" .
+
+okft:Trigger a owl:Class ;
+    rdfs:label "Trigger" .
+
+okft:actionPriority a owl:DatatypeProperty ;
+    rdfs:label "action_priority" .
+
+okft:afeta a owl:ObjectProperty ;
+    rdfs:label "afeta" ;
+    rdfs:subPropertyOf okf:arestaCausal .
+
+okft:agrupa a owl:ObjectProperty ;
+    rdfs:label "agrupa" .
+
+okft:agrupadoEm a owl:ObjectProperty ;
+    rdfs:label "agrupado_em" .
+
+okft:aplicaAoGrupo a owl:ObjectProperty ;
+    rdfs:label "aplica_ao_grupo" .
+
+okft:bridgesToFailureMode a owl:DatatypeProperty ;
+    rdfs:label "bridges_to_failure_mode" .
+
+okft:causadoPorAcao a owl:ObjectProperty ;
+    rdfs:label "causado_por_acao" .
+
+okft:compoe a owl:ObjectProperty ;
+    rdfs:label "compoe" ;
+    rdfs:subPropertyOf okf:arestaCausal .
+
+okft:constituicao a owl:DatatypeProperty ;
+    rdfs:label "constituicao" .
+
+okft:convergeEm a owl:ObjectProperty ;
+    rdfs:label "converge_em" ;
+    rdfs:subPropertyOf okf:arestaCausal .
+
+okft:criticidadeLegal a owl:DatatypeProperty ;
+    rdfs:label "criticidade_legal" .
+
+okft:documenta a owl:ObjectProperty ;
+    rdfs:label "documenta" .
+
+okft:failureCause a owl:DatatypeProperty ;
+    rdfs:label "causa" .
+
+okft:failureEffect a owl:DatatypeProperty ;
+    rdfs:label "efeito" .
+
+okft:failureMode a owl:DatatypeProperty ;
+    rdfs:label "mecanismo" .
+
+okft:funcaoObjetivo a owl:DatatypeProperty ;
+    rdfs:label "funcao_objetivo" .
+
+okft:hasAcao a owl:ObjectProperty ;
+    rdfs:label "acoes" .
+
+okft:hasFailureMode a owl:ObjectProperty ;
+    rdfs:label "mecanismos" .
+
+okft:hasGrupoDeRisco a owl:ObjectProperty ;
+    rdfs:label "grupos_risco" .
+
+okft:hasLifeCyclePhase a owl:DatatypeProperty ;
+    rdfs:label "lifeCyclePhase" .
+
+okft:hasTaskSequence a owl:ObjectProperty ;
+    rdfs:label "passos" .
+
+okft:heuristicContext a owl:DatatypeProperty ;
+    rdfs:label "contexto" .
+
+okft:instanciadoPorFalhaDe a owl:ObjectProperty ;
+    rdfs:label "instanciado_por_falha_de" .
+
+okft:iso14224_causa a owl:DatatypeProperty ;
+    rdfs:label "iso14224_causa" .
+
+okft:iso14224_classe a owl:DatatypeProperty ;
+    rdfs:label "iso14224_classe" .
+
+okft:limiares a owl:DatatypeProperty ;
+    rdfs:label "limiares" .
+
+okft:mitiga a owl:ObjectProperty ;
+    rdfs:label "mitiga" ;
+    rdfs:subPropertyOf okf:arestaCausal .
+
+okft:mitigadoPor a owl:ObjectProperty ;
+    rdfs:label "mitigado_por" .
+
+okft:monetaryImpact a owl:DatatypeProperty ;
+    rdfs:label "monetary_impact" .
+
+okft:monitoradoPor a owl:DatatypeProperty ;
+    rdfs:label "monitorado_por" .
+
+okft:nivelAlerta a owl:DatatypeProperty ;
+    rdfs:label "nivel_alerta" .
+
+okft:observableIndicator a owl:DatatypeProperty ;
+    rdfs:label "indicador_observavel" .
+
+okft:observavel a owl:DatatypeProperty ;
+    rdfs:label "observavel" .
+
+okft:order a owl:DatatypeProperty ;
+    rdfs:label "order" .
+
+okft:papelCausal a owl:DatatypeProperty ;
+    rdfs:label "papel" .
+
+okft:parentMetric a owl:DatatypeProperty ;
+    rdfs:label "parent_metric" .
+
+okft:pfInterval a owl:DatatypeProperty ;
+    rdfs:label "pf_interval" .
+
+okft:podeCausar a owl:ObjectProperty ;
+    rdfs:label "pode_causar" ;
+    rdfs:subPropertyOf okf:arestaCausal .
+
+okft:prazoLegal a owl:DatatypeProperty ;
+    rdfs:label "prazo_legal" .
+
+okft:primaryUndesiredEvent a owl:ObjectProperty ;
+    rdfs:label "contribui_para_pue" ;
+    rdfs:subPropertyOf okf:arestaCausal .
+
+okft:principio a owl:DatatypeProperty ;
+    rdfs:label "principio" .
+
+okft:propaga_para a owl:ObjectProperty ;
+    rdfs:label "propaga_para" ;
+    rdfs:subPropertyOf okf:arestaCausal .
+
+okft:propagadoDe a owl:ObjectProperty ;
+    rdfs:label "propagado_de" .
+
+okft:recebeAcaoGrupo a owl:ObjectProperty ;
+    rdfs:label "recebe_acao" .
+
+okft:responsible_role a owl:DatatypeProperty ;
+    rdfs:label "responsavel" .
+
+okft:restricoes a owl:DatatypeProperty ;
+    rdfs:label "restricoes" .
+
+okft:supportsComplianceOf a owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "supports_compliance_of" ;
+    rdfs:subPropertyOf okf:arestaCausal .
+
+okft:thresholdLimit a owl:DatatypeProperty ;
+    rdfs:label "limite" .
+
+okft:trigger a owl:ObjectProperty ;
+    rdfs:label "trigger" .
+
+okft:triggerTipo a owl:DatatypeProperty ;
+    rdfs:label "tipo" .
+
+okf:arestaDependencia a owl:ObjectProperty ;
+    rdfs:label "aresta dependencia" .
+
+okf:arestaEspacial a owl:ObjectProperty ;
+    rdfs:label "aresta espacial" .
+
+okf:arestaCausal a owl:ObjectProperty ;
+    rdfs:label "aresta causal" .
+

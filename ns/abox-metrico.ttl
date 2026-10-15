@@ -1,0 +1,31 @@
+@prefix okfm: <https://okf.atonagestao.com/ns/abox-metrico#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+okfm:MeasurementDocument a owl:Class ;
+    rdfs:label "MeasurementDocument" .
+
+okfm:documento_origem a owl:DatatypeProperty ;
+    rdfs:label "documento_origem" .
+
+okfm:dominio_fenomenologico a owl:DatatypeProperty ;
+    rdfs:label "dominio_fenomenologico" .
+
+okfm:estado_qualitativo a owl:DatatypeProperty ;
+    rdfs:label "estado_qualitativo" .
+
+okfm:monitorsFailureMode a owl:ObjectProperty ;
+    rdfs:label "monitors_failure_mode" .
+
+okfm:observations a owl:ObjectProperty ;
+    rdfs:label "observations" .
+
+okfm:satisfies_requirement_of a owl:DatatypeProperty ;
+    rdfs:label "satisfies_requirement_of" .
+
+okfm:tipoObservacao a owl:DatatypeProperty ;
+    rdfs:label "tipo_observacao" .
+
+okfm:triggersAction a owl:DatatypeProperty ;
+    rdfs:label "triggersAction" .
+

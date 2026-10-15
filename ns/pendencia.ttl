@@ -1,0 +1,34 @@
+@prefix okfp: <https://okf.atonagestao.com/ns/pendencia#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+okfp:Pendencia a owl:Class ;
+    rdfs:label "Pendencia" .
+
+okfp:bloqueia a owl:DatatypeProperty ;
+    rdfs:label "bloqueia" .
+
+okfp:confidence a owl:DatatypeProperty ;
+    rdfs:label "confidence" .
+
+okfp:descricao a owl:DatatypeProperty ;
+    rdfs:label "descricao" .
+
+okfp:norma_ref a owl:DatatypeProperty ;
+    rdfs:label "norma_ref" .
+
+okfp:prazo_legal a owl:DatatypeProperty ;
+    rdfs:label "prazo_legal" .
+
+okfp:resolvida_por a owl:DatatypeProperty ;
+    rdfs:label "resolvida_por" .
+
+okfp:responsavel a owl:DatatypeProperty ;
+    rdfs:label "responsavel" .
+
+okfp:status a owl:DatatypeProperty ;
+    rdfs:label "status" .
+
+okfp:tipo a owl:DatatypeProperty ;
+    rdfs:label "tipo" .
+
